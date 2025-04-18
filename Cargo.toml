@@ -1,0 +1,26 @@
+[package]
+name = "cargo-rust-unused"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A CLI tool for detecting unused code in Rust projects"
+license = "MIT"
+repository = "https://github.com/yourusername/cargo-rust-unused"
+keywords = ["cargo", "unused", "dead-code", "analysis", "cli"]
+categories = ["development-tools", "command-line-utilities"]
+
+[dependencies]
+syn = { version = "2.0", features = ["full", "visit", "extra-traits"] }
+walkdir = "2.4"
+clap = { version = "4.4", features = ["derive"] }
+cargo_metadata = "0.18"
+quote = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+colored = "2.1"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.10"
+
+[dev-dependencies]
+tempfile = "3.8"
