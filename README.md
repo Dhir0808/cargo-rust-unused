@@ -18,10 +18,8 @@ A CLI tool for detecting unused code in Rust projects. This tool helps you maint
 ## Installation
 
 ### From crates.io
+coming soon
 
-```bash
-cargo install cargo-rust-unused
-```
 
 ### From Source
 
